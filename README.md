@@ -2,7 +2,7 @@
 
 A pour-over coffee scale that guides the brew from the scale itself: it builds the recipe from the taste you want, tells you when to pour and how much, and learns from the last cup. No phone needed.
 
-> **Status: concept.** The screen and the flow are designed and simulated. Next step is the first prototype on the bench, then the enclosure in Fusion, printed on a Bambu Lab P2S.
+> **Status: firmware running in simulation.** Weighing, calibration, the screen and the guided 4:6 brew run on an ESP32-S3 in the Wokwi simulator and are tested on every change. Next step is the first prototype on the bench, then the enclosure in Fusion, printed on a Bambu Lab P2S.
 
 ## Why
 
@@ -34,11 +34,22 @@ Scales like the Acaia Pearl S and Fellow Tally Pro already guide pours. What is 
 
 Built on the shoulders of open projects: [WeighMyBru²](https://github.com/031devstudios/weighmybru2) as the technical base and the [Decent Open Scale](https://github.com/decentespresso/openscale) protocol for app compatibility.
 
+## Screens
+
+Rendered by the firmware itself, on the 2.8" 320 × 240 IPS layout.
+
+| Weighing the coffee | Waiting for the next pour |
+|---|---|
+| ![Weighing the coffee: 18.4 g, water target 276 g](docs/screens/dose-weighing.png) | ![Waiting: 180 g in, next pour up to 240 g in 0:12](docs/screens/brew-wait.png) |
+| **Pouring too fast** | **Grind advice at the end** |
+| ![Pouring too fast: slow down, 9.2 g/s](docs/screens/brew-too-fast.png) | ![Finished 22 s late: one click coarser](docs/screens/brew-grind-coarser.png) |
+
 ## Roadmap
 
 - [x] Market scan and concept
 - [x] Screen layout and brew flow, simulated
+- [x] Firmware: weighing, calibration, screen, guided 4:6 brew, end detection (in simulation)
 - [ ] Bench prototype: load cell, display, buttons
-- [ ] Firmware: tare, guided pours, end detection
+- [ ] Recipe picker on the scale, beep, brew curve and QR
 - [ ] Enclosure modeled in Fusion and printed
 - [ ] Companion app sync
