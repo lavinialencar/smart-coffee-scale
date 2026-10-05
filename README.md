@@ -2,6 +2,8 @@
 
 A pour-over coffee scale that guides the brew from the scale itself: it builds the recipe from the taste you want, tells you when to pour and how much, and learns from the last cup. No phone needed.
 
+**[See the live demo page →](https://lavinialencar.com.br/en/lab/smart-coffee-scale/)**
+
 > **Status: firmware running in simulation.** Weighing, calibration, the screen and the guided 4:6 brew run on an ESP32-S3 in the Wokwi simulator and are tested on every change. Next step is the first prototype on the bench, then the enclosure in Fusion, printed on a Bambu Lab P2S.
 
 ## Why
